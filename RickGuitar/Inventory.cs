@@ -20,14 +20,15 @@ namespace RickGuitar
         public void addInstrument(string serialNumber, double price, InstrumentSpec spec)
         {
             Instrument instrument = null;
-            if(instrument is Guitar) 
+            if(spec is GuitarSpec) 
             {
-                Guitar guitar = new Guitar(serialNumber, price, (GuitarSpec) spec);
+                instrument = new Guitar(serialNumber, price, (GuitarSpec) spec);
             }
-            else if (instrument is Mandolin) 
+            else if (spec is MandolinSpec)
             {
-                Mandolin mandolin = new Mandolin (serialNumber, price, (MandolinSpec) spec);
+                instrument = new Mandolin (serialNumber, price, (MandolinSpec) spec);
             }
+            instruments.Add(instrument);
         }
 
 
@@ -36,7 +37,7 @@ namespace RickGuitar
             List<Instrument> result = new List<Instrument>();
             foreach (var instrument in instruments)
             {
-                if (instrument.Spec.matches(guitarSpec))
+                if (instrument is Guitar && instrument.Spec.matches(guitarSpec))
                 {
                     result.Add(instrument);
                 }
@@ -46,14 +47,7 @@ namespace RickGuitar
 
         public List<Instrument> search(MandolinSpec mandolinSpec)
         {
-            List<Instrument> result = new List<Instrument>();
-            foreach (var instrument in instruments)
-            {
-                if (instrument.Spec.matches(mandolinSpec))
-                {
-                    result.Add(instrument);
-                }
-            }
+            List<Instrument> result = instruments.Where(i => i is Mandolin && ((Mandolin)i).Spec.matches(mandolinSpec)).ToList();
             return result;
         }
     }

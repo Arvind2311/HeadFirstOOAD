@@ -19,10 +19,5 @@ namespace RickGuitar
             this.Price = price;
             this.Spec = spec;
         }
-
-        public InstrumentSpec GetSpec()
-        {
-            return Spec;
-        }
     }
 }

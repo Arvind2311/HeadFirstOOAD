@@ -23,19 +23,19 @@ class Program
             }
         }
 
-        //MandolinSpec whatJaneLikes = new MandolinSpec(Builder.Fender, "Stratocaster", Type.Electric, Wood.Alder, Wood.Alder, Style.F);
+        MandolinSpec whatJaneLikes = new MandolinSpec(Builder.Fender, "Stratocaster", Type.Electric, Wood.Alder, Wood.Alder, Style.F);
 
-        //List<Instrument> mandolins = inventory.search(whatJaneLikes);
+        List<Instrument> mandolins = inventory.search(whatJaneLikes);
 
-        //if (mandolins.Count > 0)
-        //{
-        //    Console.WriteLine("Erin you might like this: ");
-        //    foreach (Mandolin mandolin in mandolins)
-        //    {
-        //        string msg = $"{mandolin.Price} {mandolin.SerialNumber} {mandolin.Spec.ToString()}";
-        //        Console.WriteLine(msg);
-        //    }
-        //}
+        if (mandolins.Count > 0)
+        {
+            Console.WriteLine("Jane you might like this: ");
+            foreach (Mandolin mandolin in mandolins)
+            {
+                string msg = $"{mandolin.Price} {mandolin.SerialNumber} {mandolin.Spec.ToString()}";
+                Console.WriteLine(msg);
+            }
+        }
     }
 
     static void initializeInventory(Inventory inventory)

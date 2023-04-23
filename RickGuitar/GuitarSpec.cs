@@ -20,9 +20,18 @@ namespace RickGuitar
                 $" Backwood: {this.BackWood}, TopWood: {this.TopWood}, Strings: {this.NumStrings}";
         }
 
-        public bool matches(GuitarSpec guitarSpec)
+        public override bool matches(InstrumentSpec otherSpec)
         {
-            if (guitarSpec.NumStrings != this.NumStrings)
+            if (!base.matches(otherSpec))
+            {
+                return false;
+            }
+            if (!(otherSpec is GuitarSpec))
+            {
+                return false;
+            }
+            GuitarSpec spec = (GuitarSpec)otherSpec;
+            if (!NumStrings.Equals(spec.NumStrings))
             {
                 return false;
             }

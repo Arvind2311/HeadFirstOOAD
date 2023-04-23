@@ -20,9 +20,18 @@ namespace RickGuitar
                 $" Backwood: {this.BackWood}, TopWood: {this.TopWood}, Style: {this.Style}";
         }
 
-        public bool matches(MandolinSpec mandolinSpec)
+        public override bool matches(InstrumentSpec otherSpec)
         {
-            if (mandolinSpec.Style != this.Style)
+            if (!base.matches(otherSpec))
+            {
+                return false;
+            }
+            if(!(otherSpec is MandolinSpec))
+            {
+                return false;
+            }
+            MandolinSpec spec = (MandolinSpec)otherSpec;
+            if(!Style.Equals(spec.Style))
             {
                 return false;
             }
