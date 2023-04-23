@@ -1,0 +1,15 @@
+C:\Users\Arvind\source\repos\tutorials\bin\Debug\net6.0\RickGuitar.exe
+C:\Users\Arvind\source\repos\tutorials\bin\Debug\net6.0\RickGuitar.deps.json
+C:\Users\Arvind\source\repos\tutorials\bin\Debug\net6.0\RickGuitar.runtimeconfig.json
+C:\Users\Arvind\source\repos\tutorials\bin\Debug\net6.0\RickGuitar.dll
+C:\Users\Arvind\source\repos\tutorials\bin\Debug\net6.0\RickGuitar.pdb
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\RickGuitar.csproj.AssemblyReference.cache
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\RickGuitar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\RickGuitar.AssemblyInfoInputs.cache
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\RickGuitar.AssemblyInfo.cs
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\RickGuitar.csproj.CoreCompileInputs.cache
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\RickGuitar.dll
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\refint\RickGuitar.dll
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\RickGuitar.pdb
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\RickGuitar.genruntimeconfig.cache
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\ref\RickGuitar.dll

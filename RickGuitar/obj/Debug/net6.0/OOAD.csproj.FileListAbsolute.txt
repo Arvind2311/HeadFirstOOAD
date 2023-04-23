@@ -1,0 +1,15 @@
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\OOAD.csproj.AssemblyReference.cache
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\OOAD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\OOAD.AssemblyInfoInputs.cache
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\OOAD.AssemblyInfo.cs
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\OOAD.csproj.CoreCompileInputs.cache
+C:\Users\Arvind\source\repos\tutorials\bin\Debug\net6.0\OOAD.exe
+C:\Users\Arvind\source\repos\tutorials\bin\Debug\net6.0\OOAD.deps.json
+C:\Users\Arvind\source\repos\tutorials\bin\Debug\net6.0\OOAD.runtimeconfig.json
+C:\Users\Arvind\source\repos\tutorials\bin\Debug\net6.0\OOAD.dll
+C:\Users\Arvind\source\repos\tutorials\bin\Debug\net6.0\OOAD.pdb
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\OOAD.dll
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\refint\OOAD.dll
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\OOAD.pdb
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\OOAD.genruntimeconfig.cache
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\ref\OOAD.dll

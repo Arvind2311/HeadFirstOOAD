@@ -1,0 +1,15 @@
+C:\Users\Arvind\source\repos\tutorials\bin\Debug\net6.0\tutorials.exe
+C:\Users\Arvind\source\repos\tutorials\bin\Debug\net6.0\tutorials.deps.json
+C:\Users\Arvind\source\repos\tutorials\bin\Debug\net6.0\tutorials.runtimeconfig.json
+C:\Users\Arvind\source\repos\tutorials\bin\Debug\net6.0\tutorials.dll
+C:\Users\Arvind\source\repos\tutorials\bin\Debug\net6.0\tutorials.pdb
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\tutorials.csproj.AssemblyReference.cache
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\tutorials.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\tutorials.AssemblyInfoInputs.cache
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\tutorials.AssemblyInfo.cs
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\tutorials.csproj.CoreCompileInputs.cache
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\tutorials.dll
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\refint\tutorials.dll
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\tutorials.pdb
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\tutorials.genruntimeconfig.cache
+C:\Users\Arvind\source\repos\tutorials\obj\Debug\net6.0\ref\tutorials.dll
