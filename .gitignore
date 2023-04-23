@@ -1,35 +1,24 @@
-# Visual Studio / .NET
-*.obj
-*.pdb
-*.exe
-*.dll
+# Visual Studio files
+.vs/
 *.user
-*.aps
-*.pch
-*.vspscc
-*_i.c
-*_p.c
-*.ncb
 *.suo
-*.tlb
-*.tlh
-*.bak
-*~$*
-*.log
-*.zip
-[Tt]humbs.db
-*.dat
-*.sln.docstates
+*.cache
+*.dll
+*.exe
+*.pdb
 
 # Build results
 [Dd]ebug/
 [Rr]elease/
 x64/
-build/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
 [Bb]in/
 [Oo]bj/
-obj/
-*.ilk
-*.meta
-*.generated.cs
-*.cache
+
+# Other files and folders
+*.log
+*.log.*
+node_modules/
