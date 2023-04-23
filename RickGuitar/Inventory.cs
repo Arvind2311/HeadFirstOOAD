@@ -1,35 +1,57 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
+using System.Reflection;
 using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rick.guitar
+namespace RickGuitar
 {
     public class Inventory
     {
-        public List<Guitar> guitars;
+        public List<Instrument> instruments;
         public Inventory()
         {
-            guitars = new List<Guitar>();
+            instruments= new List<Instrument>();
         }
 
-        public void addGuitar(string serialNumber, double price, Builder builder, string model, Type type, Wood backWood, Wood topWood, int numStrings)
+        public void addInstrument(string serialNumber, double price, InstrumentSpec spec)
         {
-            Guitar guitar = new Guitar(serialNumber, price, new GuitarSpec(builder, model, type, backWood, topWood, numStrings));
-            guitars.Add(guitar);
-        }
-
-
-        public List<Guitar> search(GuitarSpec guitarSpec)
-        {
-            List<Guitar> result = new List<Guitar>();
-            foreach (var guitar in guitars)
+            Instrument instrument = null;
+            if(instrument is Guitar) 
             {
-                if (guitar.GuitarSpec.matches(guitarSpec))
+                Guitar guitar = new Guitar(serialNumber, price, (GuitarSpec) spec);
+            }
+            else if (instrument is Mandolin) 
+            {
+                Mandolin mandolin = new Mandolin (serialNumber, price, (MandolinSpec) spec);
+            }
+        }
+
+
+        public List<Instrument> search(GuitarSpec guitarSpec)
+        {
+            List<Instrument> result = new List<Instrument>();
+            foreach (var instrument in instruments)
+            {
+                if (instrument.Spec.matches(guitarSpec))
                 {
-                    result.Add(guitar);
+                    result.Add(instrument);
+                }
+            }
+            return result;
+        }
+
+        public List<Instrument> search(MandolinSpec mandolinSpec)
+        {
+            List<Instrument> result = new List<Instrument>();
+            foreach (var instrument in instruments)
+            {
+                if (instrument.Spec.matches(mandolinSpec))
+                {
+                    result.Add(instrument);
                 }
             }
             return result;

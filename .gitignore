@@ -1,0 +1,35 @@
+# Visual Studio / .NET
+*.obj
+*.pdb
+*.exe
+*.dll
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*~$*
+*.log
+*.zip
+[Tt]humbs.db
+*.dat
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
+obj/
+*.ilk
+*.meta
+*.generated.cs
+*.cache

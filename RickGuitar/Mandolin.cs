@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RickGuitar;
 
 namespace RickGuitar
 {
-    public class Guitar : Instrument
+    public class Mandolin : Instrument
     {
-        public Guitar(string serialNumber, double price, GuitarSpec guitarSpec) : base(serialNumber, price, guitarSpec)
+        public Mandolin(string serialNumber, double price, MandolinSpec mandolinSpec) : base(serialNumber, price, mandolinSpec)
         {
         }
     }

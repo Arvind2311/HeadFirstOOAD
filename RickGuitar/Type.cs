@@ -1,4 +1,4 @@
-﻿namespace rick.guitar
+﻿namespace RickGuitar
 {
     public enum Type
     {
