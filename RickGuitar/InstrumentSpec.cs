@@ -10,40 +10,37 @@ namespace RickGuitar
 {
     public class InstrumentSpec
     {
-        public Builder Builder { get; set; }
-        public string Model { get; set; }
-        public Type Type { get; set; }
-        public Wood BackWood { get; set; }
-        public Wood TopWood { get; set; }
-        public InstrumentSpec(Builder builder, string model, Type type, Wood backWood, Wood topWood)
+        private Dictionary<string, string> Properties { get; set; }
+        public InstrumentSpec(Dictionary<string, string> properties)
         {
-            Builder = builder;
-            Model = model;
-            Type = type;
-            BackWood = backWood;
-            TopWood = topWood;
+            if(properties == null)
+            {
+                Properties = new Dictionary<string, string>();
+            }
+            else
+            {
+                Properties = new Dictionary<string, string>(properties);
+            }
         }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (var prop in Properties)
+            {
+                sb.Append($"{prop.Key}: {prop.Value}\n");
+            }
+            return sb.ToString();
+        }
+
         public virtual bool matches(InstrumentSpec instrumentSpec)
         {
-            if (instrumentSpec.Builder != this.Builder)
+            foreach (var property in instrumentSpec.Properties)
             {
-                return false;
-            }
-            if (instrumentSpec.Model.ToLower() != this.Model.ToLower())
-            {
-                return false;
-            }
-            if (instrumentSpec.Type != this.Type)
-            {
-                return false;
-            }
-            if (instrumentSpec.BackWood != this.BackWood)
-            {
-                return false;
-            }
-            if (instrumentSpec.TopWood != this.TopWood)
-            {
-                return false;
+                if(!Properties.TryGetValue(property.Key, out var propValue) || !propValue.Equals(property.Value))
+                {
+                    return true;
+                }
             }
             return true;
         }
